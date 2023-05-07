@@ -1,0 +1,144 @@
+import 'package:flutter/material.dart';
+import 'package:flutter1/main.dart';
+
+void main(){
+  return runApp(
+    MaterialApp(
+      theme: ThemeData(
+        textTheme: TextTheme(
+          bodyText2: TextStyle(fontSize: 35),
+        ),
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(
+           child:Text (
+                'This is Appbar',
+                style: TextStyle(
+                fontWeight: FontWeight.bold
+            ),
+          ),
+          )
+        ),
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Container(
+            color: Colors.blue,
+            // margin: EdgeInsets.only(bottom: 16.0),
+            child: Text(''
+                'Background Images',
+            ),
+          ),
+        Image(image: NetworkImage(
+          'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80',
+        ),
+        ),
+          Container(
+            // margin: EdgeInsets.only(top: 16.0),
+            child: Row(
+
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  children: [
+                    Icon(Icons.bookmark,
+                        color: Colors.black,
+                    ),
+                    Text("Bookmark",)
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.add,
+                      color: Colors.black,
+                    ),
+                    Text("Add",)
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.share,
+                      color: Colors.black,
+                    ),
+                    Text("Share",)
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.edit,
+                      color: Colors.black,
+                    ),
+                    Text("Edit",)
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Container(
+            child: Text('Helo WOrld')
+          ),
+          Container(
+              child: Text('Helo WOrld')
+          ),
+          Container(
+              child: Text('Helo WOrld')
+          )
+        ],
+      ),
+      ),
+      debugShowCheckedModeBanner: false,
+    )
+  );
+}
+
+
+
+// void main() {
+//   runApp(MaterialApp(
+//     home: Scaffold(
+//       appBar: AppBar(
+//         title: Center(
+//           child:Text('Appbar Center')
+//         ),
+//         backgroundColor: Colors.black,
+//       ),
+//      backgroundColor: Colors.amberAccent.shade100,
+//       body: Center(
+//           child: Image(
+//             image: AssetImage('assets/images/gta1.jpg'),
+//             // height: 200,
+//             // width: 200,
+//           )
+//
+//
+//       ),
+//     ),
+//     debugShowCheckedModeBanner: false,
+//   ));
+// }
+
+
+
+// class MyApp extends StatelessWidget {
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//       body: Center(
+//         child: Text(
+//           "This is body Text",
+//           style: TextStyle(
+//               fontWeight: FontWeight.bold,
+//               fontSize: 10
+//           ),
+//         ),
+//       )
+//       ),
+//     );
+//   }
+// }
+
+
+
